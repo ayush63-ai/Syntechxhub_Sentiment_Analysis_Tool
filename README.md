@@ -3,15 +3,6 @@
 <p align=\"center\">
   <strong>A Complete, Production-Ready Sentiment Analysis & Emotion Detection System</strong>
 </p>
-
-<p align=\"center\">
-  <img src=\"https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white\" alt=\"Python\" />
-  <img src=\"https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white\" alt=\"Streamlit\" />
-  <img src=\"https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white\" alt=\"Scikit-Learn\" />
-  <img src=\"https://img.shields.io/badge/NLTK-154f5b.svg?style=for-the-badge&logo=python&logoColor=white\" alt=\"NLTK\" />
-  <img src=\"https://img.shields.io/badge/Plotly-239120.svg?style=for-the-badge&logo=plotly&logoColor=white\" alt=\"Plotly\" />
-</p>
-
 <hr>
 
 ## 📖 Overview
@@ -21,6 +12,7 @@
 Beyond standard sentiment classification, this system incorporates **Emotion Detection**, **Multilingual Support**, and **Fake Review Flagging**, making it a robust, enterprise-grade prototype for customer feedback analysis.
 
 ---
+
 
 ## ✨ Key Features
 
