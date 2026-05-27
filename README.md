@@ -84,15 +84,6 @@ The app will automatically open in your default browser at `http://localhost:850
 
 ---
 
-## 📸 Screenshots
-
-*(Replace these placeholders with actual screenshots of your running app)*
-
-| Real-Time Prediction | Batch Analytics | Model Evaluation |
-| :---: | :---: | :---: |
-| <img src=\"https://via.placeholder.com/400x250.png?text=Single+Prediction+UI\" alt=\"UI\" /> | <img src=\"https://via.placeholder.com/400x250.png?text=Batch+Analytics+Dashboard\" alt=\"Batch\" /> | <img src=\"https://via.placeholder.com/400x250.png?text=Model+Comparison+Charts\" alt=\"Models\" /> |
-
----
 
 ## 💡 Future Enhancements
 
