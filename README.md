@@ -32,17 +32,17 @@ Beyond standard sentiment classification, this system incorporates **Emotion Det
 ## 🏗️ Architecture & Directory Structure
 
 ```text
-📦 AI-Sentimental-Analysis
+📦 Syntechxhub_Sentiment_Analysis_Tool
  ┣ 📂 data                   # Contains CSV datasets (e.g., sample_dataset.csv)
  ┣ 📂 models                 # Pickled ML models and TF-IDF vectorizers
- ┣ 📂 utils                  # Helper scripts and modular functions
- ┃ ┣ 📜 advanced.py          # Emotion, Voice, and Multilingual logic
- ┃ ┣ 📜 preprocessing.py     # NLTK text cleaning (Lemmatization, Tokenization)
- ┃ ┗ 📜 visualization.py     # Plotly & Matplotlib charting functions
  ┣ 📜 .gitignore             # Standard Python gitignore
+ ┣ 📜 advanced.py            # Emotion, Voice, and Multilingual logic
  ┣ 📜 app.py                 # Main Streamlit web application
+ ┣ 📜 csv_utils.py           # Batch CSV text-column selection and filtering
+ ┣ 📜 preprocessing.py       # NLTK text cleaning (Lemmatization, Tokenization)
  ┣ 📜 requirements.txt       # Project dependencies
  ┣ 📜 train.py               # ML training pipeline script
+ ┣ 📜 visualization.py       # Plotly & Matplotlib charting functions
  ┗ 📜 README.md              # Project documentation
 ```
 
@@ -55,8 +55,8 @@ Ensure you have Python 3.8+ installed.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/AI-Sentimental-Analysis.git
-cd AI-Sentimental-Analysis
+git clone https://github.com/ayush63-ai/Syntechxhub_Sentiment_Analysis_Tool.git
+cd Syntechxhub_Sentiment_Analysis_Tool
 ```
 
 ### 3. Install Dependencies
