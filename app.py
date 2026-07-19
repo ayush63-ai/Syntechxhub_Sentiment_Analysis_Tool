@@ -4,9 +4,10 @@ import pickle
 import os
 import io
 
-from utils.preprocessing import preprocess_text
-from utils.advanced import detect_emotion, detect_fake_review, translate_to_english
-from utils.visualization import plot_sentiment_distribution, plot_wordcloud, plot_model_comparison
+from csv_utils import filter_nonempty_text_rows, preferred_text_column
+from preprocessing import preprocess_text
+from advanced import detect_emotion, detect_fake_review, translate_to_english
+from visualization import plot_sentiment_distribution, plot_wordcloud, plot_model_comparison
 
 # Try importing audio recorder, handle if not installed
 try:
@@ -219,11 +220,24 @@ elif app_mode == "Batch Analysis (CSV)":
             df = pd.read_csv(uploaded_file)
             st.write("**Preview:**")
             st.dataframe(df.head())
-            
-            text_column = st.selectbox("Select the text column to analyze:", df.columns)
-            
+
+            preferred_column = preferred_text_column(df.columns)
+            default_index = 0
+            if preferred_column is not None:
+                default_index = list(df.columns).index(preferred_column)
+            text_column = st.selectbox(
+                "Select the text column to analyze:",
+                df.columns,
+                index=default_index,
+            )
+
             if st.button("Run Batch Analysis"):
                 with st.spinner("Processing..."):
+                    df = filter_nonempty_text_rows(df, text_column)
+                    if df.empty:
+                        st.warning("No analyzable text rows found in the selected column.")
+                        st.stop()
+
                     # Process
                     df['Cleaned_Text'] = df[text_column].astype(str).apply(preprocess_text)
                     vec_texts = vectorizer.transform(df['Cleaned_Text'])

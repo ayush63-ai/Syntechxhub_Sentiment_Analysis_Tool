@@ -9,7 +9,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-from utils.preprocessing import preprocess_text
+from preprocessing import preprocess_text
 
 # Create directories if they don't exist
 os.makedirs('data', exist_ok=True)
